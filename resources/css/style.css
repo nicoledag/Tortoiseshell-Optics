@@ -4,3 +4,45 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+* {
+   border: 1px solid black;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.company {
+  background-color: cadetblue;
+  color: white;
+}
+.company .container{
+  display: flex;
+  align-items: center;
+}
+
+.company img {
+  height: 1.5rem;
+  padding-right: 2rem;
+
+}
+
+
+
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  width: ;
+  height: ;
+}
