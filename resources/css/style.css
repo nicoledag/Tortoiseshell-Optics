@@ -9,9 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-* {
-   border: 1px solid black;
-}
 
 body {
   font-family: "Helvetica", sans-serif;
@@ -124,12 +121,10 @@ nav .menu {
     height: 17rem;
 }
 
-
   .headline {
-    width: 30rem;
+    width: 40%;
     left: 50%;
-    font-size: 2rem;
-    padding: 1.5rem 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   }
 
@@ -138,7 +133,7 @@ nav .menu {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 960px) {
 
 .main-banner {
     height: 17rem;
@@ -146,15 +141,18 @@ nav .menu {
 
 
   .headline {
-    width: 30rem;
-    left: 50%;
-    font-size: 1.33rem;
+    width: 40%;
+    left: 45%;
+    font-size: 2rem;
     padding: .75rem .75rem;
     font-weight: bold;
     margin-right: 2rem;
   }
 
+  .main-banner {
+    height: 18rem;
 
+  }
 
 }
 
@@ -166,33 +164,60 @@ nav .menu {
 
 /*Products and Business Info section*/
 
-.products .business-info {
+
+.supporting {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem,
-}
-
-
-
-.product-image {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 8rem;
-  padding: 3.5rem 0;
+
 }
 
-
-.product-image img {
-  max-width: 8rem;
-}
-
-.description {
-  display: block;
-  padding: 0.5rem;
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 5rem;
+  height: auto;
+  margin: .77rem;
+  font-size: .77rem;
   text-align: center;
+
+
 }
+
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.paper-icon {
+  width: 3.5rem;
+}
+
+
+
+@media only screen and (min-width: 470px) {
+
+  .supporting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
+
+  .service img {
+    width: 5rem;
+    margin-bottom: 1rem;
+  }
+  .paper-icon {
+    width: 3.5rem;
+  }
+
+
+
+}
+
 
 
 .info {
@@ -201,15 +226,59 @@ nav .menu {
   padding-top: 3.77rem;
 }
 
-.info .title {
+.title {
   display: block;
   padding: 1rem 4rem;
   background-color: cadetblue;
   color: white;
   text-align: center;
+
 }
 
+.info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+
+@media only screen and (min-width: 470px) {
+
+
+  .info {
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 4rem;
+  }
+
+
+  .info p {
+      font-size: 1rem;
+}
+
+}
+
+
+
+@media only screen and (min-width: 960px) {
+
+
+  .info {
+    width: 25%;
+    margin-right: 22%;
+    margin-bottom: 4rem;
+  }
+
+
+}
+
+
+
+
+
+
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4rem 0;
   margin-top: 4rem;
   background-color: azure;
@@ -218,4 +287,28 @@ footer {
 
 footer img {
   height: 20px;
+}
+
+footer div {
+  display: none;
+}
+
+@media only screen and (min-width: 470px) {
+
+footer div {
+  display: inline;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2rem;
+
+}
+
+footer div {
+  padding: 1rem;
+}
+
+
 }
