@@ -54,9 +54,44 @@ header nav {
   padding-right: 40px;
 }
 
+nav .menu {
+  display: none;
+}
+
+
+.logo span {
+  display: none;
+}
+
+@media only screen and (min-width: 470px) {
+
+  nav .mobile-menu {
+    display: none;
+  }
+
+nav .menu {
+  display: flex;
+}
+
+.menu span {
+  padding: .5rem;
+}
+
+.logo span {
+  display: inline-block;
+  padding: 1rem;
+}
+
+  }
+
+
+
 
 
 /*Main Banner*/
+
+
+
 
 
 .main-banner {
@@ -64,13 +99,13 @@ header nav {
   background-repeat: no-repeat;
   background-position: 20%;
   background-size: cover;
-  height: 17rem;
+  height: 14rem;
   margin-bottom: 3rem;
 }
 
 .headline {
   position: relative;
-  top: 12rem;
+  top: 9rem;
   padding: 1rem 1rem;
   background-color: white;
   color: black;
@@ -81,6 +116,52 @@ header nav {
   text-align: center;
   font-weight: bold;
 }
+
+
+@media only screen and (min-width: 470px) {
+
+.main-banner {
+    height: 17rem;
+}
+
+
+  .headline {
+    width: 30rem;
+    left: 50%;
+    font-size: 2rem;
+    padding: 1.5rem 1.5rem;
+    font-weight: bold;
+  }
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.main-banner {
+    height: 17rem;
+}
+
+
+  .headline {
+    width: 30rem;
+    left: 50%;
+    font-size: 1.33rem;
+    padding: .75rem .75rem;
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+
+
+
+}
+
+
+
+
+
 
 
 /*Products and Business Info section*/
